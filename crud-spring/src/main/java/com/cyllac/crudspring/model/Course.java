@@ -29,7 +29,7 @@ import jakarta.validation.constraints.NotNull;
 
 @Entity
 //@Table(name = "cursos")
-@SQLDelete(sql = "UPDATE Course SET status = 'Inativo' WHERE id = ?")
+@SQLDelete(sql = "UPDATE course SET status = 'Inativo' WHERE id = ?")
 @Where(clause = "status = 'Ativo'")
 public class Course {
     
